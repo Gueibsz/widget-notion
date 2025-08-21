@@ -1,38 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Importa a nova fonte futurista do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 body {
-    /* --- Ponto principal da mudança --- */
-    background-image: url('https://i.pinimg.com/originals/a4/72/38/a472382a8726395b07ad766465363402.gif');
-    background-size: cover; /* Faz a imagem cobrir todo o espaço */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    /* --- Fim da mudança --- */
+    /* --- GIF DE FUNDO ATUALIZADO --- */
+    background-image: url('https://i.pinimg.com/originals/f5/8e/ac/f58eac9c5ceef513249dd58cbe9abe90.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    color: #FFFFFF; /* Cor do texto */
-    font-family: 'Press Start 2P', cursive; /* Fonte estilo pixel art */
+    color: #FFFFFF;
+    /* --- FONTE ATUALIZADA --- */
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhor leitura */
+    /* Sombra no texto para garantir a leitura sobre o GIF */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .widget-container {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente opcional para o container */
-    border-radius: 10px; /* Bordas arredondadas opcionais */
+    /* Fundo semi-transparente para destacar um pouco o texto */
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    /* Adiciona um efeito de vidro fosco (opcional, mas fica legal) */
+    backdrop-filter: blur(2px);
 }
 
 #date {
-    font-size: 1.5rem; /* Ajuste de tamanho */
-    margin-bottom: 10px; /* Espaço entre data e hora */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 400; /* Peso normal */
 }
 
 #clock {
-    font-size: 4rem; /* Ajuste de tamanho */
-    font-weight: bold;
-    letter-spacing: 2px;
+    font-size: 4rem;
+    font-weight: 700; /* Peso em negrito */
+    letter-spacing: 3px;
 }
