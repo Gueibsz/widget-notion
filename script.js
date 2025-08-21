@@ -1,7 +1,7 @@
 function updateTime() {
     const now = new Date();
 
-    // Formatação do Relógio (ex: 16:30)
+    // Formatação do Relógio (ex: 16:30) em formato 24h
     const clockOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
     const clockString = now.toLocaleTimeString('pt-BR', clockOptions);
 
