@@ -1,11 +1,11 @@
 function updateTime() {
     const now = new Date();
 
-    // Formatação do Relógio (ex: 04:30 PM)
-    const clockOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
-    const clockString = now.toLocaleTimeString('pt-BR', clockOptions).toUpperCase();
+    // Formatação do Relógio (ex: 16:30)
+    const clockOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
+    const clockString = now.toLocaleTimeString('pt-BR', clockOptions);
 
-    // Formatação da Data (ex: 20 de Agosto de 2025)
+    // Formatação da Data (ex: 21 de agosto de 2025)
     const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
     const dateString = now.toLocaleDateString('pt-BR', dateOptions);
 
