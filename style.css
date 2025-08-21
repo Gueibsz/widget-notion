@@ -1,21 +1,20 @@
-/* CSS com apenas a linha de borda */
-@font-face {
-  font-family: '8bit Wonder';
-  src: url('8bit-wonder.ttf') format('truetype');
-}
+/* Importa a fonte Montserrat diretamente do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    background-image: url('https://i.pinimg.com/originals/b7/d3/18/b7d3183d255150a045f0962b7f0322d6.gif');
+    /* GIF de fundo atualizado */
+    background-image: url('https://i.pinimg.com/originals/f5/8e/ac/f58eac9c5ceef513249dd58cbe9abe90.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     color: #FFFFFF;
-    font-family: '8bit Wonder', sans-serif;
+    /* Aplica a fonte Montserrat */
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: flex-end;     /* Alinha o conteúdo na parte de baixo */
     height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -26,20 +25,19 @@ body {
     text-align: left;
     padding: 15px 20px;
     margin: 20px;
-    /* --- AS MUDANÇAS ESTÃO AQUI --- */
-    background-color: transparent; /* Sem fundo */
-    border: 1px solid rgba(255, 255, 255, 0.4); /* Linha de borda sutil */
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px; /* Bordas arredondadas */
+    backdrop-filter: blur(3px); /* Efeito de vidro fosco */
 }
 
 #date {
     font-size: 1rem;
+    font-weight: 400; /* Peso normal (Regular) */
     margin-bottom: 5px;
-    font-weight: normal;
 }
 
 #clock {
-    font-size: 2.2rem;
-    font-weight: normal;
+    font-size: 2.5rem;
+    font-weight: 700; /* Peso em negrito (Bold) para destacar */
     letter-spacing: 1px;
 }
