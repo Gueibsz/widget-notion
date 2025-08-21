@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    /* --- Ponto principal da mudança --- */
+    background-image: url('https://i.pinimg.com/originals/a4/72/38/a472382a8726395b07ad766465363402.gif');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    /* --- Fim da mudança --- */
+
+    color: #FFFFFF; /* Cor do texto */
+    font-family: 'Press Start 2P', cursive; /* Fonte estilo pixel art */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhor leitura */
+}
+
+.widget-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente opcional para o container */
+    border-radius: 10px; /* Bordas arredondadas opcionais */
+}
+
+#date {
+    font-size: 1.5rem; /* Ajuste de tamanho */
+    margin-bottom: 10px; /* Espaço entre data e hora */
+}
+
+#clock {
+    font-size: 4rem; /* Ajuste de tamanho */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
