@@ -1,44 +1,45 @@
-/* 1. Define e carrega a sua fonte personalizada */
+/* CSS com apenas a linha de borda */
 @font-face {
   font-family: '8bit Wonder';
   src: url('8bit-wonder.ttf') format('truetype');
 }
 
 body {
-    background-image: url('https://i.pinimg.com/originals/f5/8e/ac/f58eac9c5ceef513249dd58cbe9abe90.gif');
+    background-image: url('https://i.pinimg.com/originals/b7/d3/18/b7d3183d255150a045f0962b7f0322d6.gif');
     background-size: cover;
-    background-position: top left; /* Garante que o GIF comece do canto superior esquerdo */
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* O GIF fica fixo enquanto o conteúdo "rola" (se houver) */
+    background-attachment: fixed;
 
     color: #FFFFFF;
     font-family: '8bit Wonder', sans-serif;
     display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    justify-content: flex-start;
+    align-items: flex-end;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra menor no texto */
-    padding: 20px; /* Adiciona um pequeno espaço ao redor do conteúdo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .widget-container {
-    text-align: left; /* Alinha o texto dentro do container à esquerda */
-    padding: 10px; /* Reduz o padding */
-    background-color: transparent; /* Remove o fundo fosco */
-    border-radius: 0; /* Remove as bordas arredondadas (opcional) */
-    backdrop-filter: none; /* Remove o efeito de vidro fosco */
+    text-align: left;
+    padding: 15px 20px;
+    margin: 20px;
+    /* --- AS MUDANÇAS ESTÃO AQUI --- */
+    background-color: transparent; /* Sem fundo */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Linha de borda sutil */
+    border-radius: 15px; /* Bordas arredondadas */
 }
 
 #date {
-    font-size: 1rem; /* Diminui a fonte da data */
+    font-size: 1rem;
     margin-bottom: 5px;
     font-weight: normal;
 }
 
 #clock {
-    font-size: 2rem; /* Diminui a fonte do relógio */
+    font-size: 2.2rem;
     font-weight: normal;
     letter-spacing: 1px;
 }
