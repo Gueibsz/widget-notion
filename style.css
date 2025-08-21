@@ -1,44 +1,44 @@
 /* 1. Define e carrega a sua fonte personalizada */
 @font-face {
   font-family: '8bit Wonder';
-  /* O caminho agora aponta diretamente para o arquivo na raiz do projeto */
   src: url('8bit-wonder.ttf') format('truetype');
 }
 
 body {
     background-image: url('https://i.pinimg.com/originals/f5/8e/ac/f58eac9c5ceef513249dd58cbe9abe90.gif');
     background-size: cover;
-    background-position: center;
+    background-position: top left; /* Garante que o GIF comece do canto superior esquerdo */
     background-repeat: no-repeat;
+    background-attachment: fixed; /* O GIF fica fixo enquanto o conteúdo "rola" (se houver) */
 
     color: #FFFFFF;
-    /* 2. Aplica a nova fonte ao texto */
     font-family: '8bit Wonder', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra menor no texto */
+    padding: 20px; /* Adiciona um pequeno espaço ao redor do conteúdo */
 }
 
 .widget-container {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    backdrop-filter: blur(2px);
+    text-align: left; /* Alinha o texto dentro do container à esquerda */
+    padding: 10px; /* Reduz o padding */
+    background-color: transparent; /* Remove o fundo fosco */
+    border-radius: 0; /* Remove as bordas arredondadas (opcional) */
+    backdrop-filter: none; /* Remove o efeito de vidro fosco */
 }
 
 #date {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: 1rem; /* Diminui a fonte da data */
+    margin-bottom: 5px;
     font-weight: normal;
 }
 
 #clock {
-    font-size: 3.5rem;
+    font-size: 2rem; /* Diminui a fonte do relógio */
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
