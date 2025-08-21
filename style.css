@@ -1,44 +1,44 @@
-/* Importa a nova fonte futurista do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+/* 1. Define e carrega a sua fonte personalizada */
+@font-face {
+  font-family: '8bit Wonder';
+  /* O caminho agora aponta diretamente para o arquivo na raiz do projeto */
+  src: url('8bit-wonder.ttf') format('truetype');
+}
 
 body {
-    /* --- GIF DE FUNDO ATUALIZADO --- */
     background-image: url('https://i.pinimg.com/originals/f5/8e/ac/f58eac9c5ceef513249dd58cbe9abe90.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     color: #FFFFFF;
-    /* --- FONTE ATUALIZADA --- */
-    font-family: 'Orbitron', sans-serif;
+    /* 2. Aplica a nova fonte ao texto */
+    font-family: '8bit Wonder', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    /* Sombra no texto para garantir a leitura sobre o GIF */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .widget-container {
     text-align: center;
     padding: 20px;
-    /* Fundo semi-transparente para destacar um pouco o texto */
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    /* Adiciona um efeito de vidro fosco (opcional, mas fica legal) */
     backdrop-filter: blur(2px);
 }
 
 #date {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 400; /* Peso normal */
+    margin-bottom: 15px;
+    font-weight: normal;
 }
 
 #clock {
-    font-size: 4rem;
-    font-weight: 700; /* Peso em negrito */
-    letter-spacing: 3px;
+    font-size: 3.5rem;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
